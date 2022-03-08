@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top__left">
+                    <div class="header-top__list">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.65" fill-rule="evenodd" clip-rule="evenodd" d="M6.60961 13.4768L6.60962 13.4768C6.63993 13.4131 7.2297 12.249 7.2297 12.249C8.49918 9.75409 9.85352 6.97526 9.85352 5.57811C9.85352 2.89546 7.67102 0.71289 4.98836 0.71289C2.30564 0.71289 0.123009 2.89545 0.123009 5.57811C0.123009 6.975 1.47741 9.75395 2.74696 12.249C2.74696 12.249 3.33666 13.4134 3.36711 13.4771L3.36712 13.4771C3.60181 13.9692 3.9565 14.7129 4.98836 14.7129C6.0203 14.7129 6.37492 13.9691 6.60961 13.4768ZM4.98827 8.06C3.56245 8.06 2.40659 6.90414 2.40659 5.47831C2.40659 4.05249 3.56245 2.89662 4.98827 2.89662C6.4141 2.89662 7.56996 4.05249 7.56996 5.47831C7.56996 6.90414 6.4141 8.06 4.98827 8.06Z" fill="#25C5C2"/>
+                        </svg> 
+                        Список салонов в Барнауле
+                    </div>
+                    <div class="header-top__search">
+                        <input type="text" placeholder="Введите что вас интересует">
+                        <button>
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.65">
+                                <path d="M0.54083 5.30069C0.445181 6.45288 0.756606 7.60212 1.42089 8.54837C2.08518 9.49463 3.06027 10.178 4.17641 10.4794C5.29256 10.7809 6.47909 10.6815 7.52946 10.1983C8.57983 9.71524 9.42753 8.87908 9.92499 7.83543C10.4225 6.79178 10.5382 5.60673 10.252 4.48655C9.96588 3.36638 9.29597 2.38202 8.35891 1.70482C7.42185 1.02762 6.27699 0.700474 5.1236 0.780318C3.97022 0.860163 2.88135 1.34195 2.04654 2.1418" stroke="#25C5C2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="8.64217" y1="9.54297" x2="12.1596" y2="13.0604" stroke="#25C5C2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </button> 
+                    </div>
+                </div>
+                <div class="header-top__middle">
+                    <div class="header-top__logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-top__right">
+                    <div class="header-top__callback">
+                        <a href="tel:88007008663">8 800 700 86 63</a>
+                        <span>звонок бесплатный</span>
+                        <a href="#" class="callback__btn">заказать звонок</a>
+                    </div>
+                    <div class="header-top__social">
+                        <a href="#">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.16026 8.6775L5.81164 10.4135L7.61201 16.2035C7.72721 16.5743 8.18066 16.7114 8.48165 16.4653L11.0744 14.3517C11.3462 14.1302 11.7333 14.1192 12.0173 14.3253L16.6937 17.7205C17.0157 17.9545 17.4718 17.7781 17.5526 17.3891L20.9783 0.910736C21.0665 0.485742 20.6489 0.1312 20.2442 0.287713L1.15481 7.65182C0.683728 7.8335 0.687833 8.50046 1.16026 8.6775ZM7.32186 9.4894L16.4124 3.89053C16.5758 3.79021 16.7439 4.01112 16.6036 4.14125L9.10124 11.115C8.83753 11.3605 8.66743 11.689 8.61925 12.0456L8.36369 13.9395C8.32984 14.1923 7.97463 14.2174 7.90485 13.9727L6.92197 10.5191C6.80939 10.1252 6.97344 9.70445 7.32186 9.4894Z" fill="#68D8D6"/>
+                            </svg>    
+                        </a>
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.803711 19.5844L2.40969 14.7667C1.59479 13.3961 1.12568 11.7966 1.12568 10.0863C1.12568 5.01848 5.23401 0.910156 10.3018 0.910156C15.3696 0.910156 19.4779 5.01848 19.4779 10.0863C19.4779 15.1541 15.3696 19.2624 10.3018 19.2624C8.75989 19.2624 7.30781 18.8802 6.03249 18.2086L0.803711 19.5844Z" fill="#68D8D6"/>
+                                <path d="M16.1563 13.1391C15.7325 12.3384 14.17 11.4227 14.17 11.4227C13.8165 11.2212 13.3899 11.1986 13.1883 11.5579C13.1883 11.5579 12.6806 12.1668 12.5515 12.2544C11.9616 12.6539 11.4153 12.6385 10.8637 12.0869L9.58197 10.8052L8.30021 9.52341C7.74868 8.97188 7.73322 8.4255 8.13279 7.83565C8.22036 7.70654 8.82921 7.19879 8.82921 7.19879C9.18852 6.99692 9.16599 6.57063 8.96443 6.21711C8.96443 6.21711 8.04875 4.65459 7.24802 4.23088C6.90737 4.05058 6.48913 4.11368 6.21675 4.38607L5.65073 4.95209C3.8551 6.74771 4.73923 8.77483 6.53485 10.5705L8.17593 12.2115L9.81701 13.8526C11.6126 15.6482 13.6397 16.5324 15.4354 14.7367L16.0014 14.1707C16.2738 13.8977 16.3366 13.4794 16.1563 13.1391Z" fill="#E5FAFA"/>
+                            </svg>  
+                        </a>
+                    </div>
+                    <div class="header-top__cart">
+                        <div class="header-top__count">1</div>
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.46333 0.292969H5.23182C6.32252 0.292969 7.35609 1.06493 7.63591 2.11921L9.06738 7.48848H28.5345C28.8978 7.48848 29.2284 7.63683 29.4654 7.89835C29.7024 8.15988 29.8133 8.50517 29.7776 8.86673L28.7645 19.1544C28.6947 19.8628 28.0587 20.4582 27.347 20.4582H11.0529C10.3642 20.4582 9.6837 19.9193 9.50381 19.2544L7.60225 12.2134C7.54957 12.1187 7.50737 12.0304 7.47832 11.9207L5.0951 2.95797H1.46324C0.727341 2.95797 0.130735 2.36137 0.130735 1.62547C0.130735 0.889574 0.727343 0.292969 1.46333 0.292969Z" fill="#364647"/>
+                            <path d="M10.2031 23.123H28.1475C28.8834 23.123 29.48 23.7197 29.48 24.4555C29.48 25.1914 28.8834 25.788 28.1475 25.788H27.3674C27.5565 26.1803 27.6624 26.6199 27.6624 27.0837C27.6624 28.7352 26.3188 30.0789 24.6672 30.0789C23.0157 30.0789 21.672 28.7353 21.672 27.0837C21.672 26.6199 21.7779 26.1803 21.967 25.788H16.0385C16.2275 26.1803 16.3335 26.6199 16.3335 27.0837C16.3335 28.7352 14.9899 30.0789 13.3383 30.0789C11.6867 30.0789 10.343 28.7353 10.343 27.0837C10.343 26.6199 10.449 26.1803 10.6381 25.788H10.2029C9.46705 25.788 8.87045 25.1914 8.87045 24.4555C8.87045 23.7197 9.46723 23.123 10.2031 23.123Z" fill="#364647"/>
+                        </svg>
+                        <div class="header-top__price">1589 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="header-bottom__menu">
+                    <ul class="menu">
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Букеты</a></li>
+                        <li><a href="#">Композиции</a></li>
+                        <li><a href="#">Комнатные растения</a></li>
+                        <li><a href="#">Подарки</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Компания</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-mobile">
+        <div class="container">
+            <div class="header-mobile__top">
+                <div class="header-top__list">
+                    <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.65" fill-rule="evenodd" clip-rule="evenodd" d="M6.60961 13.4768L6.60962 13.4768C6.63993 13.4131 7.2297 12.249 7.2297 12.249C8.49918 9.75409 9.85352 6.97526 9.85352 5.57811C9.85352 2.89546 7.67102 0.71289 4.98836 0.71289C2.30564 0.71289 0.123009 2.89545 0.123009 5.57811C0.123009 6.975 1.47741 9.75395 2.74696 12.249C2.74696 12.249 3.33666 13.4134 3.36711 13.4771L3.36712 13.4771C3.60181 13.9692 3.9565 14.7129 4.98836 14.7129C6.0203 14.7129 6.37492 13.9691 6.60961 13.4768ZM4.98827 8.06C3.56245 8.06 2.40659 6.90414 2.40659 5.47831C2.40659 4.05249 3.56245 2.89662 4.98827 2.89662C6.4141 2.89662 7.56996 4.05249 7.56996 5.47831C7.56996 6.90414 6.4141 8.06 4.98827 8.06Z" fill="#25C5C2"/>
+                    </svg> 
+                    Салоны в Барнауле
+                </div>
+                <div class="header-top__social">
+                    <a href="#">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.16026 8.6775L5.81164 10.4135L7.61201 16.2035C7.72721 16.5743 8.18066 16.7114 8.48165 16.4653L11.0744 14.3517C11.3462 14.1302 11.7333 14.1192 12.0173 14.3253L16.6937 17.7205C17.0157 17.9545 17.4718 17.7781 17.5526 17.3891L20.9783 0.910736C21.0665 0.485742 20.6489 0.1312 20.2442 0.287713L1.15481 7.65182C0.683728 7.8335 0.687833 8.50046 1.16026 8.6775ZM7.32186 9.4894L16.4124 3.89053C16.5758 3.79021 16.7439 4.01112 16.6036 4.14125L9.10124 11.115C8.83753 11.3605 8.66743 11.689 8.61925 12.0456L8.36369 13.9395C8.32984 14.1923 7.97463 14.2174 7.90485 13.9727L6.92197 10.5191C6.80939 10.1252 6.97344 9.70445 7.32186 9.4894Z" fill="#68D8D6"/>
+                        </svg>    
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.803711 19.5844L2.40969 14.7667C1.59479 13.3961 1.12568 11.7966 1.12568 10.0863C1.12568 5.01848 5.23401 0.910156 10.3018 0.910156C15.3696 0.910156 19.4779 5.01848 19.4779 10.0863C19.4779 15.1541 15.3696 19.2624 10.3018 19.2624C8.75989 19.2624 7.30781 18.8802 6.03249 18.2086L0.803711 19.5844Z" fill="#68D8D6"/>
+                            <path d="M16.1563 13.1391C15.7325 12.3384 14.17 11.4227 14.17 11.4227C13.8165 11.2212 13.3899 11.1986 13.1883 11.5579C13.1883 11.5579 12.6806 12.1668 12.5515 12.2544C11.9616 12.6539 11.4153 12.6385 10.8637 12.0869L9.58197 10.8052L8.30021 9.52341C7.74868 8.97188 7.73322 8.4255 8.13279 7.83565C8.22036 7.70654 8.82921 7.19879 8.82921 7.19879C9.18852 6.99692 9.16599 6.57063 8.96443 6.21711C8.96443 6.21711 8.04875 4.65459 7.24802 4.23088C6.90737 4.05058 6.48913 4.11368 6.21675 4.38607L5.65073 4.95209C3.8551 6.74771 4.73923 8.77483 6.53485 10.5705L8.17593 12.2115L9.81701 13.8526C11.6126 15.6482 13.6397 16.5324 15.4354 14.7367L16.0014 14.1707C16.2738 13.8977 16.3366 13.4794 16.1563 13.1391Z" fill="#E5FAFA"/>
+                        </svg>  
+                    </a>
+                </div>
+                <div class="header-top__callback">
+                    <a href="tel:88007008663">8 800 700 86 63</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile__bottom">
+            <div class="header-mobile__bottom-section">
+                <div class="header-mobile__burger">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.00977" y1="1.61328" x2="17.3801" y2="1.61328" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="1.00977" y1="8.55078" x2="17.3801" y2="8.55078" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="1.00977" y1="15.7129" x2="17.3801" y2="15.7129" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header-top__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header-mobile__bottom-section">
+                <div class="header-mobile__search">
+                    <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.598145 14.7128C0.598145 7.35303 6.56445 1.38672 13.9243 1.38672C21.2841 1.38672 27.2504 7.35303 27.2504 14.7128C27.2504 22.0727 21.2841 28.039 13.9243 28.039C6.56445 28.039 0.598145 22.0727 0.598145 14.7128Z" fill="#F6FDFD" stroke="#68D8D6"/>
+                        <path d="M8.57749 12.899C8.48933 13.9611 8.77638 15.0204 9.38869 15.8926C10.001 16.7648 10.8998 17.3946 11.9286 17.6725C12.9574 17.9504 14.051 17.8587 15.0192 17.4134C15.9874 16.9681 16.7687 16.1974 17.2273 15.2354C17.6858 14.2734 17.7925 13.1811 17.5287 12.1486C17.265 11.1161 16.6475 10.2088 15.7837 9.58458C14.92 8.96038 13.8647 8.65883 12.8016 8.73242C11.7385 8.80602 10.7348 9.2501 9.96537 9.98736" stroke="#6ED9D7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="16.1002" y1="16.8086" x2="19.287" y2="19.9954" stroke="#6ED9D7" stroke-linecap="round"/>
+                    </svg>                    
+                </div>
+                <div class="header-top__cart">
+                    <div class="header-top__count">1</div>
+                    <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.46333 0.292969H5.23182C6.32252 0.292969 7.35609 1.06493 7.63591 2.11921L9.06738 7.48848H28.5345C28.8978 7.48848 29.2284 7.63683 29.4654 7.89835C29.7024 8.15988 29.8133 8.50517 29.7776 8.86673L28.7645 19.1544C28.6947 19.8628 28.0587 20.4582 27.347 20.4582H11.0529C10.3642 20.4582 9.6837 19.9193 9.50381 19.2544L7.60225 12.2134C7.54957 12.1187 7.50737 12.0304 7.47832 11.9207L5.0951 2.95797H1.46324C0.727341 2.95797 0.130735 2.36137 0.130735 1.62547C0.130735 0.889574 0.727343 0.292969 1.46333 0.292969Z" fill="#364647"/>
+                        <path d="M10.2031 23.123H28.1475C28.8834 23.123 29.48 23.7197 29.48 24.4555C29.48 25.1914 28.8834 25.788 28.1475 25.788H27.3674C27.5565 26.1803 27.6624 26.6199 27.6624 27.0837C27.6624 28.7352 26.3188 30.0789 24.6672 30.0789C23.0157 30.0789 21.672 28.7353 21.672 27.0837C21.672 26.6199 21.7779 26.1803 21.967 25.788H16.0385C16.2275 26.1803 16.3335 26.6199 16.3335 27.0837C16.3335 28.7352 14.9899 30.0789 13.3383 30.0789C11.6867 30.0789 10.343 28.7353 10.343 27.0837C10.343 26.6199 10.449 26.1803 10.6381 25.788H10.2029C9.46705 25.788 8.87045 25.1914 8.87045 24.4555C8.87045 23.7197 9.46723 23.123 10.2031 23.123Z" fill="#364647"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog">
+        <div class="container">
+            <h1>Блог</h1>
+            <div class="blog__wrap">
+                <div class="blog__item">
+                    <img src="/img/blog__1.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как сделать рождественский венок своими руками</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__2.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Виды упаковки цветов</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <img src="/img/blog__3.jpg" class="blog__item-img" alt="">
+                    <div class="blog__item-text">
+                        <span class="blog__item-date">02.05.21</span>
+                        <div class="blog__item-title">Как выбрать свежие розы?</div>
+                        <a href="#" class="blog__item-onward">Читать 🡢</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="reviews__all">
+            <a href="#" class="reviews__btn">
+                <img src="/img/arrow-btn.svg" alt="">
+            </a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <img src="/img/footer__logo.svg" alt="">
+                        <div class="footer__descriptor">Флорис - сеть салонов с 2003г</div>
+                    </div>
+                    <div class="footer__pay">
+                        <span>Принимаем к оплате:</span>
+                        <div class="footer__cards">
+                            <img src="/img/apple.png" alt="">
+                            <img src="/img/mastercard.png" alt="">
+                            <img src="/img/gpay.png" alt="">
+                            <img src="/img/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__center">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Реквизиты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Оптовый сайт</a></li>
+                            <li><a href="#">Флорис Охапка <small>(мелкий опт)</small></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right-title">Наши контакты</div>
+                    <div class="footer__contact">
+                        <span>25  11 00 (с 7:30 по 22:00)</span>
+                        <span>25 41 25 (круглосуточно)</span>
+                        <span class="request-call">Заказать звонок</span>
+                        <div class="footer__social">
+                            <img src="/img/tg.svg" alt="">
+                            <img src="/img/wa.svg" alt="">
+                            <img src="/img/inst.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/swiper.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

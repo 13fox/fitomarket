@@ -57,34 +57,7 @@ $('.reviews__btn').click(function(){
 
 
     if ($(window).width() < 769) {
-      $('.products').addClass('swiper-wrapper').removeClass('products')
-
-      var swiper2 = new Swiper(".swiper", {
-        cssMode: true,        
-        mousewheel: true,
-        keyboard: true,
-        slidesPerView: 1,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },    
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 30
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 40
-          }
-        }
-    });
+    
       $('.header-mobile__burger').click(function(){
         $('.header').toggleClass('active')
         $('.openmenu').toggleClass('active')
@@ -108,6 +81,12 @@ $('.reviews__btn').click(function(){
             let submenu=$(this).parent().find('nav');
             submenu.slideToggle();
         })
+        $('.filter_btn>a').click(function(){
+            $('.filter').toggleClass('active')
+            return false
+        });
+
+
     }
     else
     {
@@ -125,8 +104,15 @@ $('.reviews__btn').click(function(){
       }); 
 
     }
-    
-});
+
+    $('.sort>a').click(function(){
+      $(this).parent().toggleClass('active');
+    });
+    $('.filter-arrow').click(function(){
+      $(this).parents('.filter-section').toggleClass('active')
+      return false;
+    });
+});//EndJuqery
 
 document.addEventListener("DOMContentLoaded", function(){
   var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
@@ -139,4 +125,5 @@ document.addEventListener("DOMContentLoaded", function(){
     document.body.style.overflow = 'visible';
     document.querySelector('#openModal').style.marginLeft = '0px';
   });
+
 });
