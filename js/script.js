@@ -112,6 +112,8 @@ $('.reviews__btn').click(function(){
       $(this).parents('.filter-section').toggleClass('active')
       return false;
     });
+
+    
 });//EndJuqery
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -127,3 +129,4 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+

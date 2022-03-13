@@ -3543,3 +3543,36 @@ input:focus-visible {
 {
   overflow: hidden;
 }
+
+/*Gallery */
+
+.fotorama__nav-wrap
+{
+  transform: rotate(90deg);
+  position: absolute;
+  top: 213px;
+  left: -125px;
+  z-index:500;
+   width:79%;
+}
+
+.fotorama__nav__frame
+{
+  margin-left:27px !important;
+  transform: rotate(-90deg);
+
+}
+.fotorama__nav
+{
+ width:100% !important;
+}
+.fotorama__thumb-border
+{
+  height:53px;
+  width:71px;
+}
+
+.fotorama__stage 
+{
+  margin-left:90px !important;
+}
