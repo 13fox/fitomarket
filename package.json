@@ -1,0 +1,18 @@
+{
+  "name": "cviti",
+  "version": "1.0.0",
+  "description": "cviti",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "silicaid",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.26"
+  }
+}
