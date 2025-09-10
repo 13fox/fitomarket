@@ -810,8 +810,8 @@
                     <!--Step2-->
                     <div class="step2 hidden">
                         <div class="delivery_tabs">
-                            <button type="button" class="tablinks active" onclick="openTab(event, 'delivery','block','tabcontent'); return false">Доставка</button>
-                            <button type="button" class="tablinks"  onclick="openTab(event, 'pickup','block','tabcontent'); return false">Самовывоз</button>
+                            <button type="button" class="tablinks active" onclick="openTab(event, 'delivery','block','tabcontent'); ">Доставка</button>
+                            <button type="button" class="tablinks"  onclick="openTab(event, 'pickup','block','tabcontent');">Самовывоз</button>
                         </div>
                         <form class="ms2_form checount-form" id="msOrder" method="post">
                              <div class="tabcontent" id="delivery">
@@ -830,25 +830,23 @@
                                 </div>
                                 <div class="order_address">
                                     <h4>Куда доставить?</h4>
-                                    <p class="flex-jus-cont"><input type="text" class="fld_helf" value="Панфиловцев ">
-                                        <input type="text" class="fld_helf" value="20 ">
+                                    <p class="flex-jus-cont">
+                                        <input type="text" class="fld_helf" value="Панфиловцев" id="address">
+                                        <input type="text" class="fld_helf" value="20" id="number_house">
                                     </p>
                                     <p class="flex-jus-cont"><input type="text" class="fld_helf" value="Подъезд*">
-                                        <input type="text" class="fld_helf" value="Этаж*">
+                                        <input type="text" class="fld_helf" value="Этаж*" id="floor">
                                     </p>
-                                    <p class="flex-jus-cont relative"><input type="text" class="fld_helf"
-                                            value="Город\Населенный пункт*">
+                                    <p class="flex-jus-cont relative">
+                                        <input type="text" class="fld_helf"  value="Город\Населенный пункт*" id="city">
                                         <input type="text" id="datepicker" class="fld_helf" value="Дата и время доставки*">
-                                        <a href="#" id="dtpicker"><svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 6L5.99993 1L11 6" stroke="#B1C2C2" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg></a>
+
                                     </p>
                                 </div>
-    
+ <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&coordorder=longlat&apikey=9558cdcc-ad33-401c-a1df-f2a4106d8c28"                 type="text/javascript"></script>
+
                                     <div id="map">
-                                        
+
                                     </div>
 
 
@@ -868,7 +866,7 @@
                                         <div class="delivery_map_mark delivery_map_mark_pink"><strong>Розовый район - 1000 руб.</strong> с. Стуково, пос. Комсомольский</div>
                                     </div>
                                 </div>-->
-                    >
+                 
 
 
 
@@ -890,45 +888,28 @@
                                 </div>
                                 <div class="widjet">
                                     <div class="panel_list">
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Попова 142<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Малахова 120А<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Никитина 147<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Ленина 169<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Гоголя 41<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Балтийская 96<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-                                        <div class="payblock">
-                                            <a href="#"> <label class="checkbox">
-                                                <input type="checkbox">Ленина 45<span class="checkmark3"></span>
-                                            </label></a>
-                                        </div>
-        
+                                            <button class="pay_tablinks">
+                                                ул. Балтийская, 96
+                                         </button>  
+                                            <button class="pay_tablinks">
+                                                ул. Малахова, 120А
+                                         </button>  
+                                            <button class="pay_tablinks">
+                                                ул. Попова, 142                                            </button>
+                                            <button class="pay_tablinks">
+                                                ул. Гоголя, 41    
+                                             </button>
+                                            <button class="pay_tablinks">
+                                                пр-кт Ленина, 45                                            </button>
+                                            <button class="pay_tablinks">
+                                                пр-кт Ленина, 169                                         
+                                                </button>
+                                            <button class="pay_tablinks">
+                                                ул. Никитина, 147  
+                                            </button> 
                                     </div>
-                                    <div class="map">
-
+                                    <div id="map2">
+                                        
 
                                     </div>
                                 </div>
@@ -949,11 +930,11 @@
                                         Онлайн-оплата
                                 </button>
                              
-                                <button class="pay_tablinks"  onclick="openTab(event, 'sberbank-pay','block','case_pay_block','pay_tablinks'); hide_tihkoff_pay()">
+                                <button class="pay_tablinks"  onclick="openTab(event, 'sberbank-pay','block','case_pay_block','pay_tablinks'); hide_tihkoff_pay();step4_handler();">
                                     Перевод на карту Сбербанка 
                                  </button>
 
-                                 <button class="pay_tablinks"  onclick="openTab(event, 'cashe','block','case_pay_block','pay_tablinks');hide_tihkoff_pay()" >
+                                 <button class="pay_tablinks"  onclick="openTab(event, 'cashe','block','case_pay_block','pay_tablinks');hide_tihkoff_pay(); step4_handler();" >
                                     Наличные                               
                                  </button>
                               </div>
